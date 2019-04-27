@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>徳島県警察取締計画</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div>
+      <p>選択した日付の交通取締計画を表示します</p>
+      <input id="cal" type="date" min="2019-05-01" max="2019-05-31" value="2019-05-01"></input>
+      <button id="getInfoBtn">取締計画取得</button>
+    </div>
+    <div id="map"></div>
+
+    <table id="tbl">
+      <tbody id="kotuToriTbody"></tbody>
+    </table>
+    <script src="./main.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
